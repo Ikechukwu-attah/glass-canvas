@@ -25,7 +25,7 @@ This is a simple game where the player controls a robot on a 5x5 grid. The objec
 
 ## Clone the repository
 
-- git clone https://github.com/your-repo/robot-game.git
+- git clone https://github.com/Ikechukwu-attah/glass-canvas
 - cd robot-game
 
 
