@@ -12,7 +12,6 @@ export const createPlayer = async (req, res) => {
   });
 
   if (checkExistingUser) {
-    console.log("username already existing");
     return res.status(409).json({ message: "Username already in use" });
   }
   try {

@@ -8,7 +8,7 @@ import gameSectionRoutes from "./routes/gameSectionRoute.js";
 dotenv.config();
 const app = express();
 app.use(express.json());
-console.log("DATABASE_URL:", process.env.DATABASE_URL);
+
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 const port = process.env.PORT || 5000;
 

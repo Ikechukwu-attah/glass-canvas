@@ -7,6 +7,12 @@ const prisma = new PrismaClient();
 export const createGameSection = async (req, res) => {
   const { robotPosition, targetPosition, playerId, duration, score } = req.body;
   try {
+    // Delete existing game sessions for the player
+    await prisma.gameSession.deleteMany({
+      where: { playerId },
+    });
+
+    // Create a new game session
     const newSession = await prisma.gameSession.create({
       data: {
         robotPosition,
