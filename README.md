@@ -23,6 +23,12 @@ This is a simple game where the player controls a robot on a 5x5 grid. The objec
 - npm or yarn
 - MongoDB instance (cloud)
 
+## Clone the repository
+
+- git clone https://github.com/your-repo/robot-game.git
+- cd robot-game
+
+
 ## Set up the backend
 
 1. Navigate to the backend directory:
